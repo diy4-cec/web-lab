@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Form Validation</title>
+</head>
+<body>
+<h2 align="center">Form Validation</h2>
+<form id="form">
+<label>Name: </label>
+<input type="text" id="name">
+<br><br>
+<label>Mobile no.: </label>
+<input type="tel" id="mobile">
+<br><br>
+<label>E-mail: </label>
+<input type="email" id="email">
+<br><br>
+<button type="button" id="validate">Validate</button>
+<button type="reset" id="resetbtn">Reset</button>
+</form>
+<script>
+document.getElementById("validate").addEventListener('click',function()
+{
+ let name=document.getElementById("name").value;
+ let mobile=document.getElementById("mobile").value;
+ let email=document.getElementById("email").value;
+  
+ if(name=="")
+ {
+  alert("Enter your name");
+  return;
+ }
+ if(mobile.length!=10)
+ {
+  alert("Enter valid Phone number") ;
+  return;
+ }
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+ {
+  alert("Enter valid email");
+  return;
+ }
+ alert("Form submitted successfully");
+ document.getElementById("form").reset();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>bulb</title>
+</head>
+<body>
+<center>
+<h1>Bulb</h1>
+<img id="light" src="/home/s1mcabatch1/Downloads/bulb1.jpeg" alt="bulboff">
+<br><br>
+<button id="onbtn">ON</button>
+<button id="offbtn">OFF</button>
+</center>
+<script>
+document.getElementById("onbtn").addEventListener('click',function()
+{
+ document.getElementById("light").src="/home/s1mcabatch1/Downloads/bulb2.jpeg";
+});
+document.getElementById("offbtn").addEventListener('click',function()
+{
+ document.getElementById("light").src="/home/s1mcabatch1/Downloads/bulb1.jpeg";
+});
+</script>
+</body>
+</html>

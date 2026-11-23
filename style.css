@@ -1,0 +1,27 @@
+h1{
+  text-align:center;
+  color:blue;
+  }
+h2{
+  color:green;
+  background-color:lightblue;
+  }
+h3{
+  color:lightgreen;
+  background-color:lightyellow;
+  }
+p{
+  color:lightyellow;
+ }
+.clas{
+ color:orange;
+ background-color:lightyellow;
+ }
+#ida{
+ color:lightblue;
+ background-color:lightyellow;
+ }
+*{
+ color:white;
+ background-color:lightgrey;
+ }

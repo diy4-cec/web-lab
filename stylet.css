@@ -1,0 +1,24 @@
+#tb{
+    border-collapse:collapse;
+    width:100%;
+    font-family:sans-serif;
+   }
+th{
+  padding:10 px;
+  text-align:left;
+  background-color:lightgreen;
+  }
+td{
+  padding: 12 px;
+  }
+#tb, #tb th, #tb td {
+                     border: 1px solid black;
+                    }
+tr:hover{
+         background-color:lightyellow;
+        }
+tr:nth-child(even){
+                   background-color:lightblue;
+                  }
+
+   
